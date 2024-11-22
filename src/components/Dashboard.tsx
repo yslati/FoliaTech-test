@@ -1,6 +1,5 @@
-import { Bars3Icon } from "@heroicons/react/24/outline";
 import Navbar from "../helper/Navbar";
-import { PaintBrushIcon } from "@heroicons/react/16/solid";
+import { EllipsisHorizontalIcon } from "@heroicons/react/16/solid";
 
 const Dashboard = () => {
 
@@ -79,9 +78,11 @@ const Dashboard = () => {
                                                     <h2 className="text-lg font-normal">{item.title}</h2>
                                                     <span className="text-xs ">{item.time}</span>
                                                 </div>
-                                                <div className="flex gap-x-3">
-                                                    <PaintBrushIcon className="w-5 h-5" style={{color: item.active ? "#686868" : "#B2B2B2"}} />
-                                                    <Bars3Icon className="w-5 h-5 text-[#b2b2b2]" />
+                                                <div className="flex gap-x-5 items-center">
+                                                    <svg version="1.1" height={"22px"} width={"22px"} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xmlSpace="preserve">
+                                                        <g><g><path fill={item.active ? "#686868" : "#B2B2B2"} d="M244.2,81L175,11.8c-1.3-1.3-3.2-2-5.1-1.7c-1.9,0.2-3.5,1.3-4.5,3c-5.9,10.4-7,23.5-3.1,36.7L116,95.9c-12-6-24.6-9.2-36.9-9.2c-16.4,0-31.3,5.8-41.8,16.4c-1.1,1.1-1.8,2.7-1.8,4.3c0,1.6,0.7,3.2,1.8,4.3l43.8,43.8L11.5,236c-2.1,2.4-2,6,0.3,8.3c1.2,1.2,2.7,1.8,4.3,1.8c1.4,0,2.8-0.5,3.9-1.5l80.5-69.6l43.8,43.8c2.4,2.4,6.2,2.4,8.6,0c19-18.9,21.6-50.1,7.2-78.8l46.3-46.3c13,3.9,26.4,2.8,36.7-3.1c1.6-0.9,2.7-2.6,3-4.5C246.2,84.2,245.6,82.3,244.2,81z"/></g></g>
+                                                    </svg>
+                                                    <EllipsisHorizontalIcon className="w-6 h-6 text-[#b2b2b2]" />
                                                 </div>
                                             </div>
                                         )
